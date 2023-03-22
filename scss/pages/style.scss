@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  height: 646px;
+  height: 656px;
   .overlay {
     background: var(--main-bg);
     opacity: 0.2;
@@ -807,4 +807,204 @@
       filter: none;
     }
   }
+}
+.nav-bar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header-bg {
+    width: 100%;
+    position: unset;
+    padding: 15px 0;
+    header {
+      nav {
+        display: none;
+      }
+    }
+    .nav-bar {
+      display: block;
+      .fa-regular,
+      .far {
+        font-weight: 700;
+        font-size: 30px;
+      }
+    }
+  }
+  .slider {
+    height: 80vh;
+    img {
+      width: 100%;
+      display: block;
+      height: 80vh;
+    }
+    .slider-move {
+      display: none;
+    }
+    .overlay {
+      height: 80vh;
+    }
+    h1 {
+      top: 60px;
+      font-size: 50px;
+      line-height: 60px;
+      margin: 0;
+      span {
+        font-size: 50px;
+      }
+    }
+    p {
+      position: absolute;
+      top: 280px;
+      left: 12%;
+      z-index: 3;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+    .join-now-btn {
+      bottom: 110px;
+      left: 24%;
+      margin-top: 0;
+    }
+  }
+  .heading {
+    text-align: center;
+    margin: 60px 0 30px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      line-height: 24px;
+      margin: 20px 8% 0;
+    }
+  }
+  .our-courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin-top: 60px;
+    li {
+      width: 100%;
+      padding: 60px 0 40px;
+      p {
+        display: none;
+      }
+      a {
+        margin-top: 30px;
+      }
+    }
+  }
+  .about-bg {
+    padding: 40px 0;
+    margin-top: 60px;
+    .about-us {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: unset;
+      .right-panel {
+        .about-image {
+          position: absolute;
+          top: 30px;
+          left: 68%;
+          width: 100%;
+        }
+      }
+      .left-panel {
+        width: 100%;
+        margin-top: 30px;
+        h2 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 16px;
+          line-height: 24px;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+  .things-you-learn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    li {
+      width: 44%;
+      margin: 10px;
+      height: auto;
+      padding: 25px 0;
+      h3 {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .teachers {
+    display: flex;
+    justify-content: unset;
+    flex-wrap: wrap;
+    align-items: unset;
+    li {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .teachers-details {
+        text-align: center;
+        margin-top: 30px;
+        p {
+          display: none;
+        }
+      }
+      img {
+        width: 60%;
+        margin-right: 0;
+      }
+      h4 {
+        margin: 10px 0 0;
+      }
+    }
+  }
+  .porfolio-bg {
+    .portfolio {
+      display: flex;
+      justify-content: unset;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      .left-panel {
+        width: 100%;
+        h2 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 16px;
+          line-height: 24px;
+          margin: 20px 2px 0;
+          font-weight: normal;
+        }
+        p {
+          display: none;
+        }
+      }
+      .right-panel {
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  // .testimonials {
+  //   display: flex;
+  //   justify-content: unset;
+  //   align-items: unset;
+  //   li {
+  //     width: 100%;
+  //   } 
+  // }
 }

@@ -402,7 +402,7 @@ footer .contact-us li p {
   position: relative;
   z-index: 1;
   text-align: center;
-  height: 646px;
+  height: 656px;
 }
 .slider .overlay {
   background: var(--main-bg);
@@ -1117,4 +1117,234 @@ footer .contact-us li p {
 .companies li:hover {
   -webkit-filter: none;
           filter: none;
+}
+
+.nav-bar {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header-bg {
+    width: 100%;
+    position: unset;
+    padding: 15px 0;
+  }
+  .header-bg header nav {
+    display: none;
+  }
+  .header-bg .nav-bar {
+    display: block;
+  }
+  .header-bg .nav-bar .fa-regular,
+.header-bg .nav-bar .far {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .slider {
+    height: 80vh;
+  }
+  .slider img {
+    width: 100%;
+    display: block;
+    height: 80vh;
+  }
+  .slider .slider-move {
+    display: none;
+  }
+  .slider .overlay {
+    height: 80vh;
+  }
+  .slider h1 {
+    top: 60px;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+  }
+  .slider h1 span {
+    font-size: 50px;
+  }
+  .slider p {
+    position: absolute;
+    top: 280px;
+    left: 12%;
+    z-index: 3;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  .slider .join-now-btn {
+    bottom: 110px;
+    left: 24%;
+    margin-top: 0;
+  }
+  .heading {
+    text-align: center;
+    margin: 60px 0 30px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+  .heading p {
+    line-height: 24px;
+    margin: 20px 8% 0;
+  }
+  .our-courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin-top: 60px;
+  }
+  .our-courses li {
+    width: 100%;
+    padding: 60px 0 40px;
+  }
+  .our-courses li p {
+    display: none;
+  }
+  .our-courses li a {
+    margin-top: 30px;
+  }
+  .about-bg {
+    padding: 40px 0;
+    margin-top: 60px;
+  }
+  .about-bg .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .about-bg .about-us .right-panel .about-image {
+    position: absolute;
+    top: 30px;
+    left: 68%;
+    width: 100%;
+  }
+  .about-bg .about-us .left-panel {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .about-bg .about-us .left-panel h2 {
+    font-size: 20px;
+  }
+  .about-bg .about-us .left-panel h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+  .things-you-learn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .things-you-learn li {
+    width: 44%;
+    margin: 10px;
+    height: auto;
+    padding: 25px 0;
+  }
+  .things-you-learn li h3 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .teachers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .teachers li {
+    width: 100%;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teachers li .teachers-details {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .teachers li .teachers-details p {
+    display: none;
+  }
+  .teachers li img {
+    width: 60%;
+    margin-right: 0;
+  }
+  .teachers li h4 {
+    margin: 10px 0 0;
+  }
+  .porfolio-bg .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .porfolio-bg .portfolio .left-panel {
+    width: 100%;
+  }
+  .porfolio-bg .portfolio .left-panel h2 {
+    font-size: 20px;
+  }
+  .porfolio-bg .portfolio .left-panel h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 2px 0;
+    font-weight: normal;
+  }
+  .porfolio-bg .portfolio .left-panel p {
+    display: none;
+  }
+  .porfolio-bg .portfolio .right-panel {
+    width: 100%;
+    margin-top: 40px;
+  }
 }
