@@ -955,14 +955,15 @@
   }
 
   .mobile-menu {
-    display: block;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 999999;
     background: #fff;
     width: 100%;
     height: 100vh;
+    display: block;
+    z-index: 9;
+    position: fixed;
   }
 
   .slider {
