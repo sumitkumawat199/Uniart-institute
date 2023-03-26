@@ -183,6 +183,9 @@ $(document).ready(function () {
     $(".register-popup-overlay").fadeOut(500);
     // $body.removeClass(".no-scroll");
   });
+  // $(".nav-bar").click(function () {
+  //   $(".mobile-menu").Show("slow");
+  // });
 });
 
 $(document).on("click", 'a[href^="#"]', function (event) {

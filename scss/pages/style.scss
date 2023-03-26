@@ -811,6 +811,9 @@
 .nav-bar {
   display: none;
 }
+.mobile-menu {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
@@ -827,11 +830,22 @@
     }
     .nav-bar {
       display: block;
+      position: relative;
       .fa-regular,
       .far {
         font-weight: 700;
         font-size: 30px;
       }
+    }
+    .mobile-menu {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0;
+      z-index: 999999;
+      background: #fff;
+      width: 100%;
+      height: 100vh;
     }
   }
   .slider {
@@ -1130,9 +1144,9 @@
       }
       .left-panel {
         width: 100%;
-        img {
-          // width: 100%;
-        }
+        // img {
+        //   // width: 100%;
+        // }
         p {
           display: none;
         }
