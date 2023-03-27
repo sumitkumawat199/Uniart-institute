@@ -1123,6 +1123,10 @@ footer .contact-us li p {
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
@@ -1138,11 +1142,51 @@ footer .contact-us li p {
   }
   .header-bg .nav-bar {
     display: block;
+    position: relative;
   }
   .header-bg .nav-bar .fa-regular,
 .header-bg .nav-bar .far {
     font-weight: 700;
     font-size: 30px;
+  }
+  .mobile-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    z-index: 9;
+    position: fixed;
+    padding: 20px 0;
+  }
+  .mobile-menu .exit {
+    display: inline-block;
+  }
+  .mobile-menu .exit .fa-solid,
+.mobile-menu .exit .fas {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .mobile-menu .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-menu .profile h3 {
+    font-size: 20px;
+  }
+  .mobile-menu .profile p {
+    color: var(--default-text);
+    font-size: 16px;
+  }
+  .mobile-menu .profile img {
+    margin-right: 20px;
   }
   .slider {
     height: 80vh;

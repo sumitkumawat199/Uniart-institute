@@ -183,11 +183,19 @@ $(document).ready(function () {
     $(".register-popup-overlay").fadeOut(500);
     // $body.removeClass(".no-scroll");
   });
-  // $(".nav-bar").click(function () {
-  //   $(".mobile-menu").Show("slow");
-  // });
 });
-
+$(document).ready(function () {
+  $(".nav-bar").click(function () {
+    $(".mobile-menu").animate({
+      width: "toggle",
+    });
+  });
+  $(".exit").click(function () {
+    $(".mobile-menu").animate({
+      width: "toggle",
+    });
+  });
+});
 $(document).on("click", 'a[href^="#"]', function (event) {
   event.preventDefault();
   $("html, body").animate(
