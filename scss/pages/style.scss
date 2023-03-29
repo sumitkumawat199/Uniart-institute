@@ -925,6 +925,9 @@
   display: none;
 }
 
+.mobile-testimonial {
+  display: none;
+}
 
 @media screen and (max-width: 767px) {
   .container {
@@ -1237,6 +1240,7 @@
   .mobile-testimonial {
     position: relative;
     margin: 0 -15px 0 -15px;
+
     li {
       border-bottom: 4px solid #0078BA;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
