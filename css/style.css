@@ -1127,10 +1127,6 @@ footer .contact-us li p {
   display: none;
 }
 
-nav {
-  display: none;
-}
-
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
