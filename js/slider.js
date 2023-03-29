@@ -28,4 +28,13 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
   });
+  $(".mobile-testimonial").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    dots: true,
+    arrows: false,
+  });
 });
