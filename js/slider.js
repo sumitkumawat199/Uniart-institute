@@ -28,7 +28,7 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
   });
-  $(".mobile-testimonial").slick({
+  $(".mobile-testimonial ul").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
